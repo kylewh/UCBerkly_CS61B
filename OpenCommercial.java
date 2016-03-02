@@ -30,8 +30,9 @@ public class OpenCommercial {
     
     URL u = new URL(newLine);
     InputStream ins = u.openStream();
-    InputStreamReader isr = new InputStreamReader (ins);
-    BufferedReader yourSite = new BufferedReader (isr);
+    //InputStreamReader isr = new InputStreamReader (ins);
+    //BufferedReader yourSite = new BufferedReader (isr);
+    BufferedReader yourSite = new BufferedReader ( new InputStreamReader ( ins ));
     String st1 = yourSite.readLine();
     String st2 = yourSite.readLine();
     String st3 = yourSite.readLine();
